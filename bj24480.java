@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-public class bj24479 {
+public class bj24480 {
     static int[] visited;
     static ArrayList<Integer> list[];
     static int count = 0;
@@ -13,7 +13,7 @@ public class bj24479 {
         count++;
         int j;
         visited[r] = count;
-        Collections.sort(list[r]);
+        Collections.sort(list[r], Collections.reverseOrder());
         for(int m =0; m < list[r].size(); m++){
             j = list[r].get(m);
             if(visited[j]== 0){
